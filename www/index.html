@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js"></script>
+  <!-- Google Maps APIkeyの設定と初期化 -->
+  <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&sensor=false&v=3&libraries=geometry" type="text/javascript"></script>-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN4JA1aNzHrXnpkCOWgPJRPjquet3HMJ4&libraries=geometry" type="text/javascript"></script>
+</head>
+<body>
+  <!-- 地図ページ -->
+  <div data-role="page" id="MapPage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>MonacaMapApp</h1>
+      <!-- 画面クリアボタンを設置 -->
+      <a data-icon="minus" class="ui-btn-left" onclick="clearMarker()"><small>画面クリア</small></a>
+      <!-- Shopボタンを設置 -->
+      <a data-icon="star" class="ui-btn-light" onclick="showShop()"><small>Shop</small></a>
+    </header>
+    <section data-role="content">
+      <!--Map show-->
+      <div data-role="content" id="mapArea">
+        <form name="gps">
+          <table>
+            <center>
+              <tr>
+                <td><small>緯度</small></td><td><input readonly type="text" size="13%" name="lat"></td>
+                <td>　</td>
+                <td><small>経度</td><td><input readonly type="text" size="13%" name="lng"></td>
+              </tr>
+            </center>
+          </table>
+        </form>
+        <div id="map_canvas" style="width:100%"></div>
+        <center>
+          <div>
+            <button onclick="saveLocation()" data-mini="true" data-inline="true"><img src="images/upload.png" width="20" height="20"><br><small>保存</small></button>
+            <button id="all" onclick="showLocation(this)" data-mini="true" data-inline="true"><img src="images/all_search.png" width="20" height="20"><br><small>全件</small></button>
+            <button id="circle" onclick="showLocation(this)" data-mini="true" data-inline="true"><img src="images/circle_search.png" width="20" height="20"><br><small>円形</small></button>
+            <button id="square" onclick="showLocation(this)" data-mini="true" data-inline="true"><img src="images/square_search.png" width="20" height="20"><br><small>矩形</small></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
