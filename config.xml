@@ -101,4 +101,6 @@
   <access origin="*"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="EnableViewportScale" value="false"/>
+  <preference name="WindowsStorePublisherName" value="My Name"/>
+  <preference name="WindowsStoreIdentityName" value="1ef8aff5-46ca-b00f-c4c7-f18b2c7eead3"/>
 </widget>
