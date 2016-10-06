@@ -89,8 +89,7 @@ Android
 ![画像008](/readme-img/008.png)
 
 ### 3. [mBaaS](http://mb.cloud.nifty.com/)にお店データとアイコン画像をインポート
-
-* ダウンロードしたプロジェクトフォルダ内にある「setting」フォルダ内のデータをmBaaSにインポートします
+* プロジェクト：__[MonacaMapApp](https://github.com/NIFTYCloud-mbaas/MonacaMapApp/archive/master.zip)__ からダウンロードしたプロジェクトフォルダ内にある「setting」フォルダ内のデータをmBaaSにインポートします
 
 ![画像009](/readme-img/009.png)
 
